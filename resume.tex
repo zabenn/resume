@@ -1,0 +1,93 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Rishi Shah
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume}
+\usepackage{multicol}
+\usepackage[colorlinks=true,urlcolor=black]{hyperref}
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
+
+\begin{document}
+
+\begin{multicols}{2}
+
+    \begin{flushleft}
+        \Huge\textbf{SAM CRIBBS}
+    \end{flushleft}
+
+    \columnbreak
+
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
+        \small Location \  & \footnotesize San Francisco, CA                                                                            \\
+        \small Pronouns \  & \footnotesize he/him                                                                                       \\
+        \small Email \     & \footnotesize samuel\_cribbs@berkeley.edu                                                                  \\
+        \small Phone \     & \footnotesize (240) 354--7014                                                                              \\
+        \small LinkedIn \  & \footnotesize \href{https://www.linkedin.com/in/samcribbs/}{\underline{\smash{linkedin.com/in/samcribbs}}} \\
+        \small GitHub \    & \footnotesize \href{https://github.com/zabenn}{\underline{\smash{github.com/zabenn}}}
+    \end{tabular}
+
+\end{multicols}
+
+\vspace{-.5em}
+
+\begin{rSection}{Relevant Experience}
+
+    \begin{rSubsection}{Senior Software Engineer}{\em February 2024 \textbf{--} June 2026}{Raise Robotics}{}
+        \item Built an Electron, React, and Node.js/TypeScript desktop app for operating the robot, including a DXF floor-plan visualizer using Three.js, and extended it into a tablet kiosk mode for customer handoffs with field engineers; became primary owner of all UI/UX
+        \item Wrote a CLI tool for linting/formatting and automated UI testing with Jest, both integrated into a GitHub Actions CI/CD pipeline that builds, tests, and publishes the Docker image (AWS registry) and Electron app (AWS distribution)
+        \item Containerized the robot software stack with Docker and built a devcontainer workflow adopted team-wide, cutting CI pipeline runtime from 30 to 10 minutes; migrated the full ROS1 stack to ROS2, wrote a NixOS flake to automate robot-host Linux configuration, and helped stand up a Postgres database service for project and robot cache data
+        \item Mentored a summer intern on UI features via weekly syncs, as one of only 3 engineers on the software team
+    \end{rSubsection}
+
+    \begin{rSubsection}{Robotics Software Engineer}{\em May 2022 \textbf{--} February 2024}{Raise Robotics}{}
+        \item Joined as Raise Robotics' first full-time engineer; built ROS1 motion planning and full-stack control software in Python and C++ for a 6-DOF robotic arm
+        \item Wrote device drivers (C\#, Windows VM) for hardware such as the Trimble total station, communicating back to the Linux host
+        \item Developed a Linux UI application in Qt6 for operating the robot and running end-to-end automated work cycles
+        \item Helped develop closed-loop control for automated installation of curtain wall brackets on commercial building facades; traveled to construction sites to operate up to 5 concurrently deployed robots across 2 customers, hotfixing issues in person
+        \item Reconstructed the mono-repo from scratch for better organization and clearer ROS package distinction
+    \end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Education}
+
+    \begin{rSubsection}{Masters of Engineering in Mechanical Engineering}{\em August 2021 \textbf{--} May 2022}{University of California, Berkeley}{}
+        \item Concentration in Control of Robotic and Autonomous Systems
+    \end{rSubsection}
+
+    \begin{rSubsection}{Bachelor's of Science in Physics}{\em August 2017 \textbf{--} April 2021}{University of Redlands}{}
+        \item Minors in Computer Science and Mathematics
+        \item President of Pi Mu Epsilon Chapter
+    \end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Projects}
+
+    \begin{rSubsection}{Scrybuy}{\em December 2025 \textbf{--} Present}{Browser Extension \& API}{}
+        \item Built and independently maintain \href{https://addons.mozilla.org/en-US/firefox/addon/scrybuy/}{Scrybuy}, a TypeScript/JavaScript browser extension (Firefox \& Chrome) that adds real-time purchase links and pricing to Scryfall card pages; hundreds of active users
+        \item Wrote and deployed a Python FastAPI backend (\href{https://github.com/zabenn/scrybuy-api}{scrybuy-api}) integrating the ManaPool and Card Kingdom APIs to serve pricing and availability data to the extension
+    \end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Technical Skills}
+
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{2ex}} l }
+        Languages \         & \footnotesize TypeScript, JavaScript, Python, C++, C\#, Java                 \\
+        Web \& Desktop \    & \footnotesize React, Electron, Node.js, FastAPI, Three.js                    \\
+        DevOps \& Infra \   & \footnotesize Docker, GitHub Actions, AWS, NixOS, PostgreSQL, Linux, Windows \\
+        Testing \& Tools \  & \footnotesize Jest, Automated UI Testing, ROS1/ROS2, Git, \LaTeX
+    \end{tabular}
+
+\end{rSection}
+
+\end{document}
