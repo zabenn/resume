@@ -41,14 +41,14 @@
 \begin{rSection}{Relevant Experience}
 
     \begin{rSubsection}{Senior Software Engineer}{\em February 2024 \textbf{--} June 2026}{Raise Robotics}{}
-        \item Built an Electron, React, and Node.js/TypeScript desktop app for operating the robot, including a DXF floor-plan visualizer using Three.js, and extended it into a tablet kiosk mode for customer handoffs with field engineers; became primary owner of all UI/UX
-        \item Wrote a CLI tool for linting/formatting and automated UI testing with Jest, both integrated into a GitHub Actions CI/CD pipeline that builds, tests, and publishes the Docker image (AWS registry) and Electron app (AWS distribution)
-        \item Containerized the robot software stack with Docker and built a devcontainer workflow adopted team-wide, cutting CI pipeline runtime from 30 to 10 minutes; migrated the full ROS1 stack to ROS2, wrote a NixOS flake to automate robot-host Linux configuration, and helped stand up a Postgres database service for project and robot cache data
-        \item Mentored a summer intern on UI features via weekly syncs, as one of only 3 engineers on the software team
+        \item Wrote and own the majority of the robot's Python backend, including motion planning, hardware interfaces, and the ROS2 node graph
+        \item Built an Electron, React, and Node.js/TypeScript desktop app for operating the robot, including a DXF floor-plan visualizer using Three.js, extended into a tablet kiosk mode for customer handoffs; became primary owner of all UI/UX
+        \item Wrote a CLI tool for linting/formatting and automated UI testing with Jest, integrated into a GitHub Actions CI/CD pipeline that builds, tests, and publishes the Docker image (AWS registry) and Electron app (AWS distribution)
+        \item Containerized the robot software stack with Docker and built a devcontainer workflow adopted team-wide, cutting CI pipeline runtime from 30 to 10 minutes; migrated the full ROS1 stack to ROS2 in Python and wrote a NixOS flake to automate robot-host Linux configuration
     \end{rSubsection}
 
     \begin{rSubsection}{Robotics Software Engineer}{\em May 2022 \textbf{--} February 2024}{Raise Robotics}{}
-        \item Joined as Raise Robotics' first full-time engineer; built ROS1 motion planning and full-stack control software in Python and C++ for a 6-DOF robotic arm
+        \item Joined as Raise Robotics' first full-time engineer; wrote the majority of the codebase's backend, including ROS1 motion planning and control software, primarily in Python with performance-critical components in C++, for a 6-DOF robotic arm
         \item Wrote device drivers (C\#, Windows VM) for hardware such as the Trimble total station, communicating back to the Linux host
         \item Developed a Linux UI application in Qt6 for operating the robot and running end-to-end automated work cycles
         \item Helped develop closed-loop control for automated installation of curtain wall brackets on commercial building facades; traveled to construction sites to operate up to 5 concurrently deployed robots across 2 customers, hotfixing issues in person
@@ -82,7 +82,7 @@
 \begin{rSection}{Technical Skills}
 
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{2ex}} l }
-        Languages \         & \footnotesize TypeScript, JavaScript, Python, C++, C\#, Java                 \\
+        Languages \         & \footnotesize Python, TypeScript, JavaScript, C++, C\#, Java                 \\
         Web \& Desktop \    & \footnotesize React, Electron, Node.js, FastAPI, Three.js                    \\
         DevOps \& Infra \   & \footnotesize Docker, GitHub Actions, AWS, NixOS, PostgreSQL, Linux, Windows \\
         Testing \& Tools \  & \footnotesize Jest, Automated UI Testing, ROS1/ROS2, Git, \LaTeX
