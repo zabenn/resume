@@ -28,8 +28,8 @@
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
         \small Location \  & \footnotesize San Francisco, CA                                                                            \\
         \small Pronouns \  & \footnotesize he/him                                                                                       \\
-        \small Email \     & \footnotesize samuel\_cribbs@berkeley.edu                                                                  \\
         \small Phone \     & \footnotesize (240) 354--7014                                                                              \\
+        \small Email \     & \footnotesize \href{mailto:samuel_cribbs@berkeley.edu}{\underline{\smash{samuel\_cribbs@berkeley.edu}}}    \\
         \small LinkedIn \  & \footnotesize \href{https://www.linkedin.com/in/samcribbs/}{\underline{\smash{linkedin.com/in/samcribbs}}} \\
         \small GitHub \    & \footnotesize \href{https://github.com/zabenn}{\underline{\smash{github.com/zabenn}}}
     \end{tabular}
@@ -41,17 +41,18 @@
 \begin{rSection}{Relevant Experience}
 
     \begin{rSubsection}{Senior Software Engineer}{\em February 2024 \textbf{--} June 2026}{Raise Robotics}{}
-        \item Wrote and own the majority of the robot's Python backend, including motion planning, hardware interfaces, and the ROS2 node graph
+        \item Wrote and own the majority of the robot's C++ and Python backend, including motion planning, hardware interfaces, and the ROS2 node graph
         \item Built an Electron, React, and Node.js/TypeScript desktop app for operating the robot, including a DXF floor-plan visualizer using Three.js, extended into a tablet kiosk mode for customer handoffs; became primary owner of all UI/UX
-        \item Wrote a CLI tool for linting/formatting and automated UI testing with Jest, integrated into a GitHub Actions CI/CD pipeline that builds, tests, and publishes the Docker image (AWS registry) and Electron app (AWS distribution)
+        \item Wrote a CLI tool for linting/formatting and automated UI testing with Jest, integrated into a GitHub Actions CI/CD pipeline that builds, tests, and publishes the Docker image and Electron app to AWS
         \item Containerized the robot software stack with Docker and built a devcontainer workflow adopted team-wide, cutting CI pipeline runtime from 30 to 10 minutes; migrated the full ROS1 stack to ROS2 in Python and wrote a NixOS flake to automate robot-host Linux configuration
+        \item Mentored a summer intern on UI features via weekly syncs, as one of only 3 engineers on the software team
     \end{rSubsection}
 
     \begin{rSubsection}{Robotics Software Engineer}{\em May 2022 \textbf{--} February 2024}{Raise Robotics}{}
-        \item Joined as Raise Robotics' first full-time engineer; wrote the majority of the codebase's backend, including ROS1 motion planning and control software, primarily in Python with performance-critical components in C++, for a 6-DOF robotic arm
-        \item Wrote device drivers (C\#, Windows VM) for hardware such as the Trimble total station, communicating back to the Linux host
+        \item Joined as Raise Robotics' first full-time engineer; wrote the majority of the codebase's backend, including ROS1 motion planning and control software in C++ and Python for a 6-DOF robotic arm
+        \item Wrote device drivers in C\# and a Windows VM for hardware such as total stations and end effectors, communicating back to the Linux host
         \item Developed a Linux UI application in Qt6 for operating the robot and running end-to-end automated work cycles
-        \item Helped develop closed-loop control for automated installation of curtain wall brackets on commercial building facades; traveled to construction sites to operate up to 5 concurrently deployed robots across 2 customers, hotfixing issues in person
+        \item Helped develop closed-loop control for automated installation of curtain wall brackets on commercial building facades; traveled to construction sites to operate and hotfix up concurrently deployed robots across multiple customers
         \item Reconstructed the mono-repo from scratch for better organization and clearer ROS package distinction
     \end{rSubsection}
 
@@ -72,9 +73,9 @@
 
 \begin{rSection}{Projects}
 
-    \begin{rSubsection}{Scrybuy}{\em December 2025 \textbf{--} Present}{Browser Extension \& API}{}
-        \item Built and independently maintain \href{https://addons.mozilla.org/en-US/firefox/addon/scrybuy/}{Scrybuy}, a TypeScript/JavaScript browser extension (Firefox \& Chrome) that adds real-time purchase links and pricing to Scryfall card pages; hundreds of active users
-        \item Wrote and deployed a Python FastAPI backend (\href{https://github.com/zabenn/scrybuy-api}{scrybuy-api}) integrating the ManaPool and Card Kingdom APIs to serve pricing and availability data to the extension
+    \begin{rSubsection}{Scrybuy}{\em December 2025 \textbf{--} Present}{\href{https://github.com/zabenn/scrybuy}{\underline{\smash{github.com/zabenn/scrybuy}}}}{}
+        \item Built and independently maintain a TypeScript/JavaScript browser extension for Firefox and Chrome that adds real-time purchase links and pricing to Scryfall card pages; hundreds of active users
+        \item Wrote and deployed a Python FastAPI backend integrating the ManaPool and Card Kingdom APIs to serve pricing and availability data to the extension
     \end{rSubsection}
 
 \end{rSection}
@@ -82,7 +83,7 @@
 \begin{rSection}{Technical Skills}
 
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{2ex}} l }
-        Languages \         & \footnotesize Python, TypeScript, JavaScript, C++, C\#, Java                 \\
+        Languages \         & \footnotesize C++, Python, TypeScript, JavaScript, C\#, Java                 \\
         Web \& Desktop \    & \footnotesize React, Electron, Node.js, FastAPI, Three.js                    \\
         DevOps \& Infra \   & \footnotesize Docker, GitHub Actions, AWS, NixOS, PostgreSQL, Linux, Windows \\
         Testing \& Tools \  & \footnotesize Jest, Automated UI Testing, ROS1/ROS2, Git, \LaTeX
