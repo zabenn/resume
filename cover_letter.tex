@@ -1,0 +1,63 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Generic Cover Letter
+% Matches the style of resume.tex / resume.cls
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume}
+\usepackage{multicol}
+\usepackage[colorlinks=true,urlcolor=black]{hyperref}
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
+
+% ---- Fill these in for each application ----
+\newcommand{\companyName}{Company}
+\newcommand{\positionTitle}{Position Title}
+
+\begin{document}
+
+\begin{multicols}{2}
+
+    \begin{flushleft}
+        \Huge\textbf{SAM CRIBBS}
+    \end{flushleft}
+
+    \columnbreak
+
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
+        \small Location \  & \footnotesize San Francisco, CA                                                                            \\
+        \small Pronouns \  & \footnotesize he/him                                                                                       \\
+        \small Phone \     & \footnotesize (240) 354--7014                                                                              \\
+        \small Email \     & \footnotesize \href{mailto:samuel_cribbs@berkeley.edu}{\underline{\smash{samuel\_cribbs@berkeley.edu}}}    \\
+        \small LinkedIn \  & \footnotesize \href{https://www.linkedin.com/in/samcribbs/}{\underline{\smash{linkedin.com/in/samcribbs}}} \\
+        \small GitHub \    & \footnotesize \href{https://github.com/zabenn}{\underline{\smash{github.com/zabenn}}}
+    \end{tabular}
+
+\end{multicols}
+
+\vspace{-.5em}
+
+\begin{rSection}{Cover Letter}
+
+    \normalsize
+
+    Dear \companyName\ Hiring Team,
+
+    \medskip
+
+    I am writing to express my interest in the \positionTitle\ position at \companyName. I am a full-stack software engineer with experience across the entire stack, from React/TypeScript front ends and Node.js/Python backends to the DevOps and infrastructure that ships and runs them, and I believe I would be a strong addition to your team.
+
+    \medskip
+
+    In my current role as a Senior Software Engineer at Raise Robotics, I have built and maintained a cross-platform Electron/React/TypeScript desktop application end-to-end, written backend services in Python and C++, and established CI/CD and containerization practices (Docker, GitHub Actions, AWS) that significantly improved our team's development velocity. These experiences have given me a broad, full-stack skill set spanning user-facing software, backend systems, and infrastructure -- one that I am eager to bring to \companyName.
+
+    \medskip
+
+    Thank you for your time and consideration. I look forward to the possibility of speaking with you further.
+
+    \medskip
+
+    Sincerely, \\
+    Sam Cribbs
+
+\end{rSection}
+
+\end{document}
